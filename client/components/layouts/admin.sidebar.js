@@ -53,6 +53,14 @@ const AdminSideBar = ({ router }) => {
                 </a>
               </Link>
             </li>
+            <li className='nav-item'>
+              <Link href='/design'>
+                <a className={['nav-link', pathname === '/design' ? 'active' : ''].join(' ')}>
+                  <i className='fa fa-cog nav-icon' />
+                  <p>&nbsp;Design Intro</p>
+                </a>
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

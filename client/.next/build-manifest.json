@@ -24,10 +24,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/my-election": [
+    "/design": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/my-election.js"
+      "static/chunks/pages/design.js"
     ]
   },
   "ampFirstPages": []
