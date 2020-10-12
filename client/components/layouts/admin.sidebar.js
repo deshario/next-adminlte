@@ -5,8 +5,8 @@ const AdminSideBar = ({ router }) => {
   const { pathname } = router
   return (
     <aside className='main-sidebar sidebar-dark-primary elevation-4'>
-      <a href='index3.html' className='brand-link'>
-        <img src='dist/img/AdminLTELogo.png' className='brand-image img-circle elevation-3' style={{ opacity: '.8' }} />
+      <a href='index3.html' className='brand-link' style={{textAlign:'center'}}>
+        {/* <img src='dist/img/AdminLTELogo.png' className='brand-image img-circle elevation-3' style={{ opacity: '.8' }} /> */}
         <span className='brand-text font-weight-light'>
           Device Manager
         </span>
@@ -14,10 +14,10 @@ const AdminSideBar = ({ router }) => {
       <div className='sidebar'>
         <div className='user-panel mt-3 pb-3 mb-3 d-flex'>
           <div className='image'>
-            <img src='dist/img/user2-160x160.jpg' className='img-circle elevation-2' alt='User Image'/>
+            <img src='dist/img/avatar04.png' className='img-circle elevation-2' alt='User Image'/>
           </div>
           <div className='info'>
-            <a href='#' className='d-block'>Deshario Sunil</a>
+            <a href='#' className='d-block'>Optimus Prime</a>
           </div>
         </div>
         <nav className='mt-2'>
@@ -32,32 +32,24 @@ const AdminSideBar = ({ router }) => {
             <li className='nav-item'>
               <Link href='/'>
                 <a className={['nav-link',pathname === '/' ? 'active' : ''].join(' ')}>
-                <i className='fa fa-home nav-icon' />
-                  <p>&nbsp;Home</p>
-                </a>
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link href='/my-election'>
-                <a className={['nav-link',pathname === '/my-election' ? 'active' : ''].join(' ')}>
                 <i className='fa fa-laptop nav-icon' />
-                  <p>&nbsp;My Device</p>
+                  <p>&nbsp;Devices</p>
                 </a>
               </Link>
             </li>
             <li className='nav-item'>
-              <Link href='/voters'>
-                <a className={['nav-link', pathname === '/voters' ? 'active' : ''].join(' ')}>
+              <Link href='/owners'>
+                <a className={['nav-link', pathname === '/owners' ? 'active' : ''].join(' ')}>
                   <i className='fa fa-users nav-icon' />
-                  <p>&nbsp;Users</p>
+                  <p>&nbsp;Owners</p>
                 </a>
               </Link>
             </li>
             <li className='nav-item'>
-              <Link href='/design'>
-                <a className={['nav-link', pathname === '/design' ? 'active' : ''].join(' ')}>
+              <Link href='/settings'>
+                <a className={['nav-link', pathname === '/settings' ? 'active' : ''].join(' ')}>
                   <i className='fa fa-cog nav-icon' />
-                  <p>&nbsp;Textpad</p>
+                  <p>&nbsp;Settings</p>
                 </a>
               </Link>
             </li>
