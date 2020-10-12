@@ -8,7 +8,7 @@ const AdminSideBar = ({ router }) => {
       <a href='index3.html' className='brand-link'>
         <img src='dist/img/AdminLTELogo.png' className='brand-image img-circle elevation-3' style={{ opacity: '.8' }} />
         <span className='brand-text font-weight-light'>
-          EVoting Manager
+          Device Manager
         </span>
       </a>
       <div className='sidebar'>
@@ -41,7 +41,7 @@ const AdminSideBar = ({ router }) => {
               <Link href='/my-election'>
                 <a className={['nav-link',pathname === '/my-election' ? 'active' : ''].join(' ')}>
                 <i className='fa fa-laptop nav-icon' />
-                  <p>&nbsp;My Election</p>
+                  <p>&nbsp;My Device</p>
                 </a>
               </Link>
             </li>
@@ -49,7 +49,7 @@ const AdminSideBar = ({ router }) => {
               <Link href='/voters'>
                 <a className={['nav-link', pathname === '/voters' ? 'active' : ''].join(' ')}>
                   <i className='fa fa-users nav-icon' />
-                  <p>&nbsp;Voters</p>
+                  <p>&nbsp;Users</p>
                 </a>
               </Link>
             </li>
@@ -57,7 +57,7 @@ const AdminSideBar = ({ router }) => {
               <Link href='/design'>
                 <a className={['nav-link', pathname === '/design' ? 'active' : ''].join(' ')}>
                   <i className='fa fa-cog nav-icon' />
-                  <p>&nbsp;Design Intro</p>
+                  <p>&nbsp;Textpad</p>
                 </a>
               </Link>
             </li>
