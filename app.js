@@ -10,7 +10,7 @@ require('dotenv/config');
     await nextApp.prepare(); // Prepare to use another server for handling SSR
     const app = express();
     const serverRouter = require('./server/routes.js');
-    const port = process.env.PORT || 3000;
+    const port = process.env.PORT || 9000;
     app.use(express.urlencoded({ extended: true })); // Body Parser
     app.use(express.json()); // Body Parser
     app.use(serverRouter); // Apply Routes
